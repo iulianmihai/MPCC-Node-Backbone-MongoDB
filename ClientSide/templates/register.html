@@ -1,0 +1,52 @@
+<div class="account-container register">
+    <div class="content clearfix">
+        <form id="register-form">
+            <h1>Create Your Account</h1>
+            <div class="alert alert-error hidden">
+            </div>
+            <div class="login-social">
+                <p style="margin:0;"><strong>Note:</strong> All fields marked with orange border are required</p>
+            </div>
+            <div class="login-fields">
+                <div class="field clearfix">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstName" value="" placeholder="First Name" class="login" />
+                </div>
+                <div class="field">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastName" value="" placeholder="Last Name" class="login" />
+                </div>
+                <div class="field control-group warning">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email" value="" placeholder="Email" class="login"/>
+                </div>
+                <div class="field control-group warning">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="cemail" name="cemail" value="" placeholder="Confirm Email" class="login"/>
+                </div>
+                <div class="field control-group warning">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" value="" placeholder="Password" class="login"/>
+                    <div style="font-size:11px;line-height:normal;padding:3px;">The password must be at least 8 characters long. The password cannot contain the username. The password must contain at least 1 alpha, 1 numeric, and 1 special character</div>
+                </div>
+                <div class="field control-group warning">
+                    <label for="cpassword">Confirm Password:</label>
+                    <input type="password" id="cpassword" name="cpassword" value="" placeholder="Confirm Password" class="login"/>
+                </div>
+            </div>
+            <div class="login-actions">
+
+				<span class="login-checkbox">
+					<input id="Field" name="Field" type="checkbox" class="field login-checkbox" value="First Choice" tabindex="4" />
+					<label class="choice" for="Field">I have read and agree with the Terms of Use.</label>
+				</span>
+
+                <input id="btnRegister" type="submit" value="Register" class="button btn btn-warning btn-large"/>
+                <!--button btn btn-warning btn-large-->
+            </div>
+        </form>
+    </div>
+</div>
+<div class="login-extra">
+    Already have an account? <a href="#login"> Login</a>
+</div>

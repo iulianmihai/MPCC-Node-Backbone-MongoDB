@@ -1,0 +1,54 @@
+!!! 5
+html(lang="en")
+    head
+        meta (charset='utf-8')
+        title MPCC Connect
+        meta (name="viewport" content="width=device-width, initial-scale=1.0")
+        meta (name="description" content="")
+        meta (name="author" content="Iulian Mihai")
+        link(rel='stylesheet',href='/styles/style.css')
+        <!--[if IE 7]><link rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+        <!--[if lt IE 9]>
+        script(type='text/javascript',src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+        <![endif]-->
+        link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+        link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+        link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png"')
+        link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+        link(rel="shortcut icon", href="ico/favicon.png")
+    body
+        div.navbar.navbar-inverse.navbar-fixed-top
+            div.navbar-inner
+                div.container
+                    a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.brand(href="#") MPCC - Connect
+                    div.nav-collapse
+                        form.navbar-search.pull-right
+                            input.search-query( type="text", placeholder="Search")
+        div.subnavbar
+            div.subnavbar-inner
+                div.container
+                    ul.mainnav
+                        li.active
+                            a(href='#index')
+                                i.icon-home
+                                span Home
+                        li
+                            a(href='#about')
+                                i.icon-list-alt
+                                span About
+                        li
+                            a(href='#faq')
+                                i.icon-question-sign
+                                span FAQ
+        div.main
+            div.main-inner
+                div.container
+                    div.page
+                        div#content
+        div#footer
+        div#chat
+        block scripts
